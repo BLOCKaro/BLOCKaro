@@ -31,7 +31,9 @@ $ pip install -r requirements.txt
 Start a blockchain node server,
 
 ```sh
-# Windows users can follow this: https://flask.palletsprojects.com/en/1.1.x/cli/#application-discovery
+## For windows
+$ set FLASK_APP=server.py
+## For MAC
 $ export FLASK_APP=server.py
 $ flask run --port 8000
 ```
@@ -48,18 +50,25 @@ $ python run.py
 The application should be up and running at [http://localhost:5000](http://localhost:5000).
 
 Here are a few screenshots
+1.Landing Page
 
-1. Posting some content
+![image.png](https://github.com/BLOCKaro/BLOCKaro/blob/main/Screenshots/screen1.png)
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/1.png)
+2. Posting some content
 
-2. Requesting the node to mine
+![image.png](https://github.com/BLOCKaro/BLOCKaro/blob/main/Screenshots/screen2.png)
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/2.png)
+3. Requesting the node to mine
 
-3. Resyncing with the chain for updated data
+![image.png](https://github.com/BLOCKaro/BLOCKaro/blob/main/Screenshots/screen3.png)
 
-![image.png](https://github.com/satwikkansal/python_blockchain_app/raw/master/screenshots/3.png)
+4. Resyncing with the chain for updated chat
+
+![image.png](https://github.com/BLOCKaro/BLOCKaro/blob/main/Screenshots/screen4.png)
+
+5. Displaying chain using Postman
+
+![image.png](https://github.com/BLOCKaro/BLOCKaro/blob/main/Screenshots/screen5.png)
 
 To play around by spinning off multiple custom nodes, use the `register_with/` endpoint to register a new node. 
 
