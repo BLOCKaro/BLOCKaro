@@ -18,7 +18,7 @@
 Clone the project,
 
 ```sh
-$ git clone 
+$ git clone https://github.com/BLOCKaro/BLOCKaro.git 
 ```
 
 Install the dependencies,
