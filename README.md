@@ -11,7 +11,8 @@
 
 ## How Blockchain works?
   ![Blockchain Architecture](https://cdn.guru99.com/images/1/053018_0719_BlockchainT2.png)
-  Using cryptography to keep exchanges secure, blockchain provides a decentralized database, or “digital ledger”, of transactions that everyone on the network can see. This network is essentially a chain of computers that must all approve an exchange before it can be verified and recorded.
+  
+Using cryptography to keep exchanges secure, blockchain provides a decentralized database, or “digital ledger”, of transactions that everyone on the network can see. This network is essentially a chain of computers that must all approve an exchange before it can be verified and recorded.
 
 ## Instructions to run
 
