@@ -7,7 +7,7 @@
   Blockchain is a shared, immutable ledger that facilitates the process of recording transactions and tracking assets in a business network.
 
 ## How is Blockchain implemented?
-  A well-designed blockchain stores records in blocks that are linked to one another using a cryptographic technique that creates a digital, distributed ledger. The cryptographic “signature” on each block links to the previous block in a way that makes the blockchain virtually tamper-proof after the blocks are created
+  A well-designed blockchain stores records in blocks that are linked to one another using a cryptographic technique that creates a digital, distributed ledger. The cryptographic “signature” on each block links to the previous block in a way that makes the blockchain virtually tamper-proof after the blocks are created.
 
 ## How Blockchain works?
   ![Blockchain Architecture](https://cdn.guru99.com/images/1/053018_0719_BlockchainT2.png)
