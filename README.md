@@ -9,7 +9,7 @@
 ## How is Blockchain implemented?
   A well-designed blockchain stores records in blocks that are linked to one another using a cryptographic technique that creates a digital, distributed ledger. The cryptographic “signature” on each block links to the previous block in a way that makes the blockchain virtually tamper-proof after the blocks are created
 
-## How Blockchaain works?
+## How Blockchain works?
   ![Blockchain Architecture](https://cdn.guru99.com/images/1/053018_0719_BlockchainT2.png)
   Using cryptography to keep exchanges secure, blockchain provides a decentralized database, or “digital ledger”, of transactions that everyone on the network can see. This network is essentially a chain of computers that must all approve an exchange before it can be verified and recorded.
 
