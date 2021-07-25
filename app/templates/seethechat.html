@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='css/chat.css') }}">
+</head>
+
+<body>
+    <a href="/"><button id="button">HOME</button></a>
+    <a href="/#about"><button id="button">Start a New Chat</button></a>
+    <a href="/chat" target="_blank" style="float:right;"><button id="button">see new Chats</button></a>
+    <a href="{{node_address}}/mine" target="_blank" style="float:right;"><button id="button">Request to mine</button></a>
+    
+    {% for post in posts %}
+    <div class="post_box">
+        <div class="post_box-header">
+            <div class="post_box-options" id="divapp" style="text-align: right;"><button class="option-btn"onclick="reply()" id="button">Reply to {{post.author}}</button></div>
+            <div>
+                <div style="background: rgb(100, 97, 250) none repeat scroll 0% 0%; box-shadow: rgb(0, 97, 146) 0px 0px 0px 2px;"class="post_box-avatar">{{post.author[0]}}</div>
+                <div class="name-header">{{post.author}}</div>
+                <div class="post_box-subtitle"> Posted at <i>{{readable_time(post.timestamp)}}</i></div>
+            </div>
+        </div>
+        <div>
+            <div class="post_box-body">
+                <p>{{post.content}}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</body>
+</section>
+<script>
+    function reply() 
+    {
+        
+            
+           // <textarea id="text" name="content" rows="4" cols="100" placeholder="EnTeR YoUr SeCrEt"></textarea>
+           // <br>
+           // <input id="button" type="submit" value="Post">
+           
+        var divobj = document.querySelector("#divapp");
+        var f = document.createElement("form");
+        f.setAttribute('method', "post");
+        f.setAttribute('action', "/submit1");
+        f.setAttribute('id', "textform");
+        f.setAttribute('class', "row");
+        f.setAttribute('id', "textform");
+        var sobj = document.createElement('span');
+        sobj.innerHTML = '<input class="slide-up" id="card title" type="text" name="author" placeholder="Please Enter!" /><label for="card">Name</label>';
+        var sobj2 = document.createElement('span');
+        sobj2.innerHTML = '<input class="slide-up" id="expires text" type="text" name="content" placeholder="Secret Text!" /><label for="expires">Context</label>'
+        var but=document.createElement('input');
+        but.id="button";
+        but.type="submit";
+        but.value="post";
+        f.appendChild(sobj);
+        f.appendChild(sobj2);
+        f.appendChild(but);
+        divobj.appendChild(f);
+    }
+</script>
+
+</html>

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+<section id="about"  >
+  <h2 style="font-size:120px;color:white;" ><b>BLOC<span style="color:tomato" >Kify</span> Your <span style="color:tomato" >Chat</span></b></h2>
+  {% with messages = get_flashed_messages() %}
+  {% if messages %}
+  <ul>
+    {% for message in messages %}
+    <li>{{ message }} </li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% endwith %}
+  <div id="wrapper">
+    <form action="/submit" method="post">
+      <div id="margin"><b><span style="font-size:20px;color:white;">FROM</span></b>
+        <input id="title" type="text" name="author">
+      </div>
+      <textarea id="text" name="content" rows="4" cols="100" placeholder="WhAtS On YoUr MiNd?"></textarea>
+      <br>
+      <input id="button" type="submit" value="Post" href="#about">
+    </form>
+  </div>
+
+  <a href="{{node_address}}/mine" target="_blank"><button id="button" id="but">Request to mine</button></a>
+  <a href="/chat" target="_blank"><button id="button">SEE the Chat</button></a>
+  {% endblock %}
