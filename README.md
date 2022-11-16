@@ -1,6 +1,6 @@
 # BLOCKaro(Group chat using Blockchain)
 
-  BLOCKo is a decentralized group chat app running on basic blockchain which is built from scratch. It allows us to send encrypted messages which can only be decrypted by the people in the network. No one outside the network can decrypt the messages and hence this platform provides a secure network for a group of people to run their business and carry on their work. The messages sent in this chat application are can't be edited or changed and hence immutable because of the blockchain. This keeps a check on everyone inside the network and allows complete transparency.
+  BLOCKaro is a decentralized group chat app running on basic blockchain which is built from scratch. It allows us to send encrypted messages which can only be decrypted by the people in the network. No one outside the network can decrypt the messages and hence this platform provides a secure network for a group of people to run their business and carry on their work. The messages sent in this chat application are can't be edited or changed and hence immutable because of the blockchain. This keeps a check on everyone inside the network and allows complete transparency.
 
 ## What is blockchain? 
 
